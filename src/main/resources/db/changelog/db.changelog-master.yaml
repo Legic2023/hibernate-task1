@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+    - file: migration/V001__schema.sql
+    relativeToChangeLogFile: true
+  - include:
+    - file: migration/R__data.sql
+    relativeToChangeLogFile: true
