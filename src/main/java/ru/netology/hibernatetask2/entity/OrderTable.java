@@ -1,17 +1,14 @@
 package ru.netology.hibernatetask2.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
-@Builder
+
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
 @Entity
 public class OrderTable {
     @Id
@@ -24,8 +21,8 @@ public class OrderTable {
     @ManyToOne
     private Customers customers;
 
-    @Column
-    private String product_name;
+    @Column(name = "product_name")
+    private String productName;
 
     @Column
     private int amount;

@@ -1,5 +1,5 @@
-create schema spring_jdbc;
-create table spring_jdbc.customers
+create schema db_migration;
+create table db_migration.customers
 (
     id           serial PRIMARY KEY,
     name         varchar(50),
@@ -8,7 +8,7 @@ create table spring_jdbc.customers
     phone_number varchar(10)
 );
 
-create table spring_jdbc.order_table
+create table db_migration.order_table
 (
     id           serial PRIMARY KEY,
     date         date,

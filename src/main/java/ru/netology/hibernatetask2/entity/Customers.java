@@ -23,8 +23,8 @@ public class Customers {
     @Column
     private int age;
 
-    @Column
-    private String phone_number;
+    @Column(name = "phone_number")
+    private String phonNumber;
 
 
 }

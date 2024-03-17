@@ -1,4 +1,4 @@
-select product_name
-from spring_jdbc.customers
-         right join spring_jdbc.order_table on spring_jdbc.customers.id = spring_jdbc.order_table.customers_id
-where upper(name) = upper(:name);
+select ord.productName
+from Customers cust
+         inner join OrderTable ord on cust.id = ord.customers.id
+where upper(cust.name) = upper(:name)

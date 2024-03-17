@@ -1,4 +1,4 @@
-insert into spring_jdbc.customers (name, surname, age, phone_number)
+insert into db_migration.customers (name, surname, age, phone_number)
 values ('Ivan', 'Ivanov', 30, '9105782455'),
        ('alexey', 'Petrov', 25, '9105782525'),
        ('Ivan', 'Smirnov', 68, '9105786725'),
@@ -6,7 +6,7 @@ values ('Ivan', 'Ivanov', 30, '9105782455'),
        ('Oleg', 'Ivanov', 19, '9105782345');
 
 
-insert into spring_jdbc.order_table (date, customers_id, product_name, amount)
+insert into db_migration.order_table (date, customers_id, product_name, amount)
 values (CURRENT_DATE, 1, 'product1', 100),
        (CURRENT_DATE, 1, 'product2', 200),
        (CURRENT_DATE, 1, 'product3', 300),

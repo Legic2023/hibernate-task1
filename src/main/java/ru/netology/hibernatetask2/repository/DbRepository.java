@@ -33,9 +33,8 @@ public class DbRepository {
 
     public List<String> getProductName(String name) {
 
-        return entityManager.createNativeQuery(
+        return entityManager.createQuery(
                 requestLine, String.class).setParameter("name", name).getResultList();
     }
-
 
 }
