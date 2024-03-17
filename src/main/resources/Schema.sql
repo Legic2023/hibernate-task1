@@ -15,7 +15,7 @@ values ('Ivan', 'Ivanov', 30, '9105782455'),
        ('Alexey', 'Ivanov', 41, '9105787525'),
        ('Oleg', 'Ivanov', 19, '9105782345');
 
-create table spring_jdbc.order
+create table spring_jdbc.tb_order
 (
     id           serial PRIMARY KEY,
     date         date,
@@ -24,7 +24,7 @@ create table spring_jdbc.order
     amount       int
 );
 
-insert into spring_jdbc.order (date, customer_id, product_name, amount)
+insert into spring_jdbc.tb_order (date, customer_id, product_name, amount)
 values (CURRENT_DATE, 1, 'product1', 100),
        (CURRENT_DATE, 1, 'product2', 200),
        (CURRENT_DATE, 1, 'product3', 300),

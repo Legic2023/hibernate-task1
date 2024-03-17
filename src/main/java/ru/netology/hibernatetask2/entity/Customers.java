@@ -3,10 +3,10 @@ package ru.netology.hibernatetask2.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
 public class Customers {
 
@@ -23,8 +23,7 @@ public class Customers {
     @Column
     private int age;
 
-    @Column
-    private String phone_number;
-
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
 }
