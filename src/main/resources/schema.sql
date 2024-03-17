@@ -16,5 +16,3 @@ values ('Ivan', 'Ivanov', '9105782455', 'Moscow', 30),
        ('Ivan', 'Smirnov', '9105786725', 'Moscow', 68),
        ('Alexey', 'Ivanov', '9105787525', 'Tula', 41),
        ('Oleg', 'Ivanov', '9105782345', 'Moscow', 19);
-
-

@@ -1,19 +1,17 @@
 package ru.netology.hibernatetask1.entity;
 
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Builder
+
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
 @Entity
+@IdClass(PersonsId.class)
+@Table(name = "persons")
 public class Persons {
     @Id
     private String name;
@@ -21,11 +19,11 @@ public class Persons {
     @Id
     private String surname;
 
-    @Column
-    private String phone_number;
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
-    @Column
-    private String city_of_living;
+    @Column(name = "city_of_living")
+    private String cityOfLiving;
 
     @Id
     private int age;
